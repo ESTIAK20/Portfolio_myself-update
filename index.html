@@ -5,11 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Estiak Hossain | Portfolio</title>
 
-<!-- ===== ICONS ===== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ===== VARIABLES ===== */
 :root{
   --bg:#121212;
   --text:#f2f2f2;
@@ -22,195 +20,235 @@
   --card:#f3f3f3;
   --accent:#0077ff;
 }
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);}
 
-/* ===== NAVBAR ===== */
 nav{
-  position:sticky;top:0;z-index:100;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:12px 20px;background:var(--card);
+  position:sticky;
+  top:0;
+  z-index:100;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  background:var(--card);
 }
-nav ul{display:flex;gap:15px;list-style:none;}
-nav a{text-decoration:none;color:var(--text);font-size:14px;}
+nav ul{
+  display:flex;
+  gap:15px;
+  list-style:none;
+}
+nav a{
+  text-decoration:none;
+  color:var(--text);
+  font-size:14px;
+}
 nav a:hover{color:var(--accent);}
-.toggle{cursor:pointer;font-size:20px;color:var(--accent);}
+.toggle{
+  cursor:pointer;
+  font-size:20px;
+  color:var(--accent);
+}
 
-/* ===== SECTIONS ===== */
-section{padding:70px 20px;max-width:1100px;margin:auto;}
-h2{text-align:center;color:var(--accent);margin-bottom:25px;}
+section{
+  padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+h2{
+  text-align:center;
+  color:var(--accent);
+  margin-bottom:25px;
+}
 
-/* ===== HOME ===== */
 #home{text-align:center;}
 #home img{
-  width:160px;height:160px;border-radius:50%;
+  width:160px;
+  height:160px;
+  border-radius:50%;
   border:4px solid var(--accent);
 }
-.social a{color:var(--accent);margin:10px;font-size:22px;}
+
+.social a{
+  color:var(--accent);
+  margin:10px;
+  font-size:22px;
+}
+
 .btn{
-  display:inline-block;margin-top:15px;
-  padding:10px 20px;border-radius:25px;
-  background:var(--accent);color:white;
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  border-radius:25px;
+  background:var(--accent);
+  color:white;
   text-decoration:none;
 }
 
-/* ===== CARDS ===== */
 .card{
   background:var(--card);
-  padding:20px;border-radius:15px;
+  padding:20px;
+  border-radius:15px;
   margin-bottom:15px;
 }
 
-/* ===== GRID ===== */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
 
-/* ===== FORM ===== */
-form input,form textarea{
-  width:100%;padding:10px;margin:8px 0;
-  border-radius:8px;border:none;
+form input, form textarea{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:8px;
+  border:none;
 }
 form button{
-  width:100%;padding:10px;
+  width:100%;
+  padding:10px;
   background:var(--accent);
-  border:none;color:white;
+  border:none;
+  color:white;
   border-radius:8px;
 }
 
-/* ===== FOOTER ===== */
-footer{text-align:center;padding:20px;background:var(--card);}
+footer{
+  text-align:center;
+  padding:20px;
+  background:var(--card);
+}
 </style>
 </head>
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
 <nav>
-<h3 style="color:var(--accent)">Estiak</h3>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#achievements">Achievements</a></li>
-<li><a href="#works">Works</a></li>
-<li><a href="#publications">Publications</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div class="toggle" onclick="toggleTheme()">🌙</div>
+  <h3 style="color:var(--accent)">Estiak</h3>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
 </nav>
 
-<!-- ===== HOME ===== -->
 <section id="home">
-<img src="https://via.placeholder.com/160">
-<h1>Estiak Hossain</h1>
-<p>ID: C243131 | CSE | 3rd Semester</p>
+  <img src="https://via.placeholder.com/160">
+  <h1>Estiak Hossain</h1>
+  <p>ID: C243131 | CSE | 3rd Semester</p>
 
-<div class="social">
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-github"></i></a>
-</div>
+  <div class="social">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/ESTIAK20" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/estiak-fahim-191907339/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
 
-<a class="btn" href="CV.pdf" download>Download CV</a>
+  <a class="btn" href="CV.pdf" download>Download CV</a>
 </section>
 
-<!-- ===== ABOUT ===== -->
 <section id="about">
-<h2>About Me</h2>
-<div class="card">
-I am a Computer Science & Engineering student passionate about software development,
-problem solving, and modern web technologies.
-</div>
+  <h2>About Me</h2>
+  <div class="card">
+    I am a Computer Science & Engineering student passionate about software development,
+    problem solving, and modern web technologies.
+  </div>
 </section>
 
-<!-- ===== EDUCATION ===== -->
 <section id="education">
-<h2>Education</h2>
-<div class="card">
-BSc in CSE – 3rd Semester <br>
-ID: C243131
-</div>
+  <h2>Education</h2>
+  <div class="card">
+    BSc in CSE – 3rd Semester <br>
+    ID: C243131
+  </div>
 </section>
 
-<!-- ===== PROJECTS ===== -->
 <section id="projects">
-<h2>Projects</h2>
-<div class="grid">
-<div class="card">Portfolio Website</div>
-<div class="card">Student Management System</div>
-<div class="card">C++ Mini Projects</div>
-</div>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Portfolio Website</div>
+    <div class="card">Student Management System</div>
+    <div class="card">C++ Mini Projects</div>
+  </div>
 </section>
 
-<!-- ===== ACHIEVEMENTS ===== -->
 <section id="achievements">
-<h2>Achievements</h2>
-<div class="card">✔ University Coding Contest Participant</div>
-<div class="card">✔ Academic Excellence</div>
+  <h2>Achievements</h2>
+  <div class="card">✔ University Coding Contest Participant</div>
+  <div class="card">✔ Academic Excellence</div>
 </section>
 
-<!-- ===== WORKS ===== -->
 <section id="works">
-<h2>Blogs / Hobbies / Works</h2>
-<div class="card">
-Blogging, Coding Practice, Learning AI & Web Development
-</div>
+  <h2>Blogs / Hobbies / Works</h2>
+  <div class="card">
+    Blogging, Coding Practice, Learning AI & Web Development
+  </div>
 </section>
 
-<!-- ===== PUBLICATIONS ===== -->
 <section id="publications">
-<h2>Publications</h2>
-<div class="card">No publications yet (In progress)</div>
+  <h2>Publications</h2>
+  <div class="card">No publications yet (In progress)</div>
 </section>
 
-<!-- ===== CONTACT ===== -->
 <section id="contact">
-<h2>Contact Me</h2>
-<form id="contactForm">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message"></textarea>
-<button type="submit">Send</button>
-</form>
-<p id="status"></p>
-</section>
+  <h2>Contact Me</h2>
 
-<!-- ===== UNIT TEST ===== -->
-<section>
-<h2>Unit Testing</h2>
-<div class="card" id="testResult"></div>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="status"></p>
 </section>
 
 <footer>
-© 2025 Estiak Hossain
+  © 2026 Estiak Hossain
 </footer>
 
 <script>
-/* ===== THEME ===== */
 function toggleTheme(){
   document.body.classList.toggle("light");
 }
 
-/* ===== GOOGLE SHEET FORM (PLACEHOLDER) ===== */
-document.getElementById("contactForm").addEventListener("submit",e=>{
+document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
-  document.getElementById("status").innerText=
-  "Message sent successfully (Google Sheet Connected)";
-});
 
-/* ===== UNIT TEST ===== */
-function testTheme(){
-  document.body.classList.add("light");
-  return document.body.classList.contains("light");
-}
-document.getElementById("testResult").innerText =
-  testTheme() ? "✔ Theme Test Passed" : "❌ Theme Test Failed";
+  const formURL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSejkMIHGJWKHjTVaC_oMe510HmG16PztcBGL9u1rMKd-IWbDQ/formResponse";
+
+  const formData = new FormData();
+  formData.append("entry.1111111111", document.getElementById("name").value);
+  formData.append("entry.2222222222", document.getElementById("email").value);
+  formData.append("entry.3333333333", document.getElementById("message").value);
+
+  fetch(formURL, {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+  });
+
+  document.getElementById("status").innerText =
+    "Message sent successfully!";
+  document.getElementById("contactForm").reset();
+});
 </script>
 
 </body>
